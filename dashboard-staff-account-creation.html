@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Mustang Agency - Staff</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon"
+        href="assets/img/logo.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Menu</div>
+            <div class="list-group list-group-flush">
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard.html">Dashboard</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard-staff-account-management.html">Account Management</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard-staff-pending-account-requests.html">Pending Account Requests</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard-staff-company-acc-managemant.html">Manage Company Accounts</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard-staff-professional-acc-managemant.html">Manage Professional Accounts</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard-staff-job-matching-interface.html">Job Matching Interface</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard-staff-payment-history-interface.html">Payment History</a>
+                <a style="background-color:white; color:#4d9df1;;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Staff Account Creation</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-outline-primary" id="sidebarToggle">☰</button>
+                    &nbsp;&nbsp;&nbsp;
+                    <div class="nav-item active"><a class="nav-link" href="index.html"><img
+                                src="assets/img/logo.png"
+                                width="50rem">Mustang Agency</a></div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link">Hi, Username (staff)</a></li>
+                            <!-- <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> -->
+
+                        </ul>
+                        <button class="btn btn-outline-primary" id="sidebarToggle" onclick="signOut()">Sign Out</button>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid">
+              <br>
+
+                    <div class="col-sm-6" >
+                        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                            <div class="card-body">
+                                <div class="form-comments">
+                                    <div class="title-box-2">
+                                      <h5 class="title-left">
+                                        Staff Account Creation
+                                      </h5>
+                                      <!-- <form action="dashboard-staff-pending-account-requests-professional.html" style="text-align: right;">
+                                        <button class="btn btn-primary" type="submit"><h7>Professional Account Request</h7></button>
+                                      </form> -->
+                                      <br>
+                                    </div>
+                                    <form class="form-mf">
+                                      <div class="row">
+                                        <div class="col-md-12 mb-3">
+                                          <div class="form-group">
+                                            <b>First Name*</b>
+                                            <input type="text" class="form-control input-mf" id="stafffirstname" placeholder="Staff First Name">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                          <div class="form-group">
+                                            <b>Last Name*</b>
+                                            <input type="text" class="form-control input-mf" id="stafflastname" placeholder="Staff Last Name">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                          <div class="form-group">
+                                            <b>Date of Birth*</b>
+                                            <input type="date" class="form-control input-mf" id="staffdob" placeholder="Staff date of Birth">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                          <div class="form-group">
+                                            <b>Gender*</b>
+                                            <input type="text" class="form-control input-mf" id="staffgender" placeholder="Staff Gender">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                          <div class="form-group">
+                                            <b>Email Address*</b>
+                                            <input type="email" class="form-control input-mf" id="staffEmail" placeholder="Staff Email" required>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                          <div class="form-group">
+                                            <b>Phone Number*</b>
+                                            <input type="text" class="form-control input-mf" id="staffPhone" placeholder="Staff Phone Number" required>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                          <div class="form-group">
+                                            <b>Address*</b>
+                                            <input type="text" class="form-control input-mf" id="staffaddress" placeholder="Address" required>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                          <div class="form-group">
+                                            <b>City/ Town*</b>
+                                            <input type="text" class="form-control input-mf" id="staffcity" placeholder="City/Town" required>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                          <div class="form-group">
+                                            <b>State*</b>
+                                            <input type="text" class="form-control input-mf" id="staffstate" placeholder="State" required>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                          <div class="form-group">
+                                            <b>Zip Code*</b>
+                                            <input type="text" class="form-control input-mf" id="staffzipcode" placeholder="Zip Code" required>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                          <div class="form-group">
+                                            <b>Country*</b>
+                                            <input type="text" class="form-control input-mf" id="staffcountry" placeholder="Country" required>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                          <div class="form-group">
+                                            <b>Staff Username*</b>
+                                            <input type="text" class="form-control input-mf" id="staffUsername" placeholder="">
+                                          </div>
+                                        </div>
+                                        <br>
+                                        
+                      
+                                        
+                      
+                                        <br>
+                      
+                                        <div class="col-md-12">
+                                          <br>
+                                          <button type="submit" class="btn btn-primary">Create</button>
+                                          <!-- <button type="submit" class="btn btn-secondary" onclick="companyReject()">Rejec</button> -->
+                                        </div>
+                                        
+                                      </div>
+                                    </form>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <script>
+        function signOut() {
+            window.location = "index.html"
+        }
+    </script>
+    <script>
+      function companyReject() {
+          window.location = "dashboard-staff-pending-account-requests-reject.html"
+      }
+  </script>
+</body>
+
+</html>

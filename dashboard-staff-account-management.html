@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Mustang Agency - Staff</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon"
+        href="assets/img/logo.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Menu</div>
+            <div class="list-group list-group-flush">
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard.html">Dashboard</a>
+                <a style="background-color:white; color:#4d9df1;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Account Management</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard-staff-pending-account-requests.html">Pending Account Requests</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard-staff-company-acc-managemant.html">Manage Company Accounts</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard-staff-professional-acc-managemant.html">Manage Professional Accounts</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard-staff-job-matching-interface.html">Job Matching Interface</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard-staff-payment-history-interface.html">Payment History</a>
+                <!-- <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="dashboard-staff-account-creation.html">Staff Account Creation</a> -->
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-outline-primary" id="sidebarToggle">☰</button>
+                    &nbsp;&nbsp;&nbsp;
+                    <div class="nav-item active"><a class="nav-link" href="index.html"><img
+                                src="assets/img/logo.png"
+                                width="50rem">Mustang Agency</a></div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link">Hi, Username (staff)</a></li>
+                            <!-- <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> -->
+
+                        </ul>
+                        <button class="btn btn-outline-primary" id="sidebarToggle" onclick="signOut()">Sign Out</button>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid">
+              <br>
+
+                <div class="row ">
+                    <div class="col-sm-6">
+                        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                            <div class="card-body">
+                                <h5>Account information</h5>
+                                <form action="#!" style="text-align: right;">
+                                  <button class="btn btn-primary" onclick="editButton()"><h7>Edit</h7></button>
+                                </form>
+                                <br>
+                                <form class="form-mf">
+                                    <div class="row">
+                                        <h6>Personal Information</h6>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          First Name: <input id="stafffn" type="text" value="Sai Sambhu Prasad" readonly>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Last Name: <input id="staffln" type="text" value="Kalaga" readonly>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Staff ID: <input id="staffid" type="text" value="49284735" readonly>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Date of Birth: <input id="staffdob" type="date" value="2001-09-27" readonly>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                          Gender: <input id="staffgender" type="text" value="Male" readonly>
+                                        </div>
+                                      </div>
+                                      <h6>Conatct Information</h6>
+                                      <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                          Email Address: <input id="staffemail" type="text" value="skalaga@smu.edu" readonly>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                          Phone Number: <input id="staffphnnum" type="text" value="1234567890" readonly>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Address: <input id="staffaddress" type="text" value="Dallas, TX, 75205" readonly>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          City/Town: <input id="staffcity" type="text" value="Dallas " readonly>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group"> 
+                                          State: <input id="staffstate" type="text" value="Texas" readonly>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Zipcode: <input id="staffzipcode" type="text" value="75206" readonly>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Country: <input id="staffcountry" type="text" value="USA" readonly>
+                                        </div>
+                                      </div>
+                                      <h6>Position Details</h6>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Department: <input id="staffdept" type="text" value="Executive " readonly>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Job Title: <input id="stafftitle" type="text" value="CEO" readonly>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Role: <input id="staffrole" type="text" value="Admin" readonly>
+                                        </div>
+                                      </div>
+                                      <h6>Account Security</h6>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Username: SambhuKalaga27
+                                        </div>
+                                      </div>
+                                      <!-- <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Password: ************
+                                        </div>
+                                      </div> -->
+                                      <h6>Employeement Details</h6>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Date of Joining: 1st Febuary 2024
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                          Employment Type: Full-Time
+                                        </div>
+                                      </div>
+                    
+                    
+                                      <br>
+                    
+                                      <div class="col-md-12">
+                                        <br>
+                                        <button type="submit" class="btn btn-secondary">Save</button>
+                                        <br><br>
+                                        <hr>
+                                        <center><strong>ACCOUNT DEACTIVATION </strong><br><br>
+                                        <button type="submit" class="btn btn-outline-secondary">DEACTIVATE ACCOUNT</button></center>
+
+                                      </div>
+                                    </div>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <script>
+        function signOut() {
+            window.location = "index.html"
+        }
+
+        function editButton(){
+          document.getElementById("stafffn").removeAttribute('readonly');
+          document.getElementById("staffln").removeAttribute('readonly');
+          document.getElementById("staffid").removeAttribute('readonly');
+          document.getElementById("staffdob").removeAttribute('readonly');
+          document.getElementById("staffgender").removeAttribute('readonly');
+          document.getElementById("staffemail").removeAttribute('readonly');
+          document.getElementById("staffphnnum").removeAttribute('readonly');
+          document.getElementById("staffaddress").removeAttribute('readonly');
+          document.getElementById("staffcity").removeAttribute('readonly');
+          document.getElementById("staffstate").removeAttribute('readonly');
+          document.getElementById("staffzipcode").removeAttribute('readonly');
+          document.getElementById("staffcountry").removeAttribute('readonly');
+          document.getElementById("staffdept").removeAttribute('readonly');
+          document.getElementById("stafftitle").removeAttribute('readonly');
+          document.getElementById("staffrole").removeAttribute('readonly');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Mustang Agency - Company</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+      <div class="sidebar-heading border-bottom bg-light">Menu</div>
+      <div class="list-group list-group-flush">
+        <a style="background-color:#4d9df1; color:white;"
+          class="list-group-item list-group-item-action list-group-item-light p-3"
+          href="dashboard-company.html">Dashboard</a>
+        <a style="background-color:#4d9df1; color:white;"
+          class="list-group-item list-group-item-action list-group-item-light p-3"
+          href="dashboard-company-account-management.html">Account Management</a>
+        <a style="background-color:white; color:#4d9df1;"
+          class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Post a New Job</a>
+        <a style="background-color:#4d9df1; color:white;"
+          class="list-group-item list-group-item-action list-group-item-light p-3"
+          href="dashboard-company-job-posting-management.html">Job Posing Management</a>
+        <a style="background-color:#4d9df1; color:white;"
+          class="list-group-item list-group-item-action list-group-item-light p-3"
+          href="dashboard-company-payment-and-acc-status.html">Payment Portal and Account Status</a>
+      </div>
+    </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+      <!-- Top navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container-fluid">
+          <button class="btn btn-outline-primary" id="sidebarToggle">☰</button>
+          &nbsp;&nbsp;&nbsp;
+          <div class="nav-item active"><a class="nav-link" href="index.html"><img src="assets/img/logo.png"
+                width="50rem">Mustang Agency</a></div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+              <li class="nav-item active"><a class="nav-link">Hi, Employer (Company)</a></li>
+              <!-- <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> -->
+
+            </ul>
+            <button class="btn btn-outline-primary" id="sidebarToggle" onclick="signOut()">Sign Out</button>
+          </div>
+        </div>
+      </nav>
+      <!-- Page content-->
+      <div class="container-fluid">
+        <br>
+        <!-- <h3 style="text-align: center;">Company</h3> -->
+
+
+        <div class="row ">
+          <div class="col-sm-6">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+              <div class="card-body">
+                <h5>Create a New Job</h5>
+                <br>
+                <!-- <form class="form-mf"> -->
+                <div class="row">
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <b>Name of the Position*</b>
+                      <input type="text" class="form-control input-mf" id="companynewposition" placeholder="Position">
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <b>Unique ID*</b>
+                      <input type="text" class="form-control input-mf" id="companynewuniqueid" placeholder="ID">
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <b>First name of contact Person*</b>
+                      <input type="text" class="form-control input-mf" id="companynewfirstname"
+                        placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <b>Last name of the contact Person*</b>
+                      <input type="text" class="form-control input-mf" id="companynewlastname" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <b>Email Address*</b>
+                      <input type="email" class="form-control input-mf" id="companynewemail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <b>Phone Number*</b>
+                      <input type="text" class="form-control input-mf" id="staffPhone" placeholder="Staff Phone Number">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <b>Start Date*</b>
+                      <input type="date" class="form-control input-mf" id="companynewstartdate" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <b>End Date*</b>
+                      <input type="date" class="form-control input-mf" id="companynewenddate" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <b>Pay per hour*</b>
+                      <input type="text" class="form-control input-mf" id="companynewpayperhour" placeholder="rate">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <b>Start time (Every day)*</b>
+                      <input type="time" class="form-control input-mf" id="companynewstarttime" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <b>End time (Every day)*</b>
+                      <input type="time" class="form-control input-mf" id="companynewendtime" placeholder="">
+                    </div>
+                  </div>
+
+                  <br>
+                  &nbsp;<h4>Qualifications</h4>
+                  <!-- </div> -->
+                  <!-- <div class="col-md-6 mb-3"> -->
+                  <!-- <div class="form-group"> -->
+                  &nbsp;<label id="categoryLabel" for="categoryField"><b>Category</b></label>
+                  <input type="text" class="form-control input-mf" id="categoryField" placeholder="Name of Category" />
+                  &nbsp;<label id="keywordsLabel" for="keywordsField"><b>Keywords/ Key Phrases</b></label>
+                  <input type="text" class="form-control input-mf" id="keywordsField"
+                    placeholder="List of Keywords/ Key Phrases seperated by commas" />
+                  <br> &nbsp;
+                  <button id="addButton" onclick="add()" class="btn btn-outline-primary">Add</button>
+                  <br> &nbsp;
+
+                  <!-- </style> -->
+                  <table id="myTable" style="text-align: center; border-width: 1pt; border-color: black;">
+                    <thead>
+                      <tr>
+                        <th>Category</th>
+                        <th>Keywords/ Key Phrases</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- EMPTY-->
+                    </tbody>
+                    <tfoot>
+                      <!-- NO NEED-->
+
+                    </tfoot>
+                  </table>
+                  <br>
+                  <br>
+                  <script>
+                    var count = 1;
+                    function add() {
+                      var category = document.getElementById("categoryField").value;
+                      var keyword = document.getElementById("keywordsField").value;
+                      var table = document.getElementById("myTable");
+                      var row = table.insertRow(count++);
+                      var col1 = row.insertCell(0);
+                      var col2 = row.insertCell(1);
+                      col1.innerHTML = category;
+                      col2.innerHTML = keyword;
+
+                      document.getElementById("categoryField").value = "";
+                      document.getElementById("keywordsField").value = "";
+                    }
+                  </script>
+                  <br>&nbsp;
+
+
+
+
+                  <br>
+
+                  <div class="col-md-12">
+                    <br>
+                    <button type="submit" class="btn btn-primary">Post</button>
+                    <!-- <button type="submit" class="btn btn-secondary" onclick="companyReject()">Rejec</button> -->
+                  </div>
+
+                </div>
+                <!-- </form> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+
+  <script>
+    function signOut() {
+      window.location = "index.html"
+    }
+  </script>
+</body>
+
+</html>

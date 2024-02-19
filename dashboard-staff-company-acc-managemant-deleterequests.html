@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Mustang Agency - Staff</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Menu</div>
+            <div class="list-group list-group-flush">
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="dashboard.html">Dashboard</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="dashboard-staff-account-management.html">Account Management</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="dashboard-staff-pending-account-requests.html">Pending Account Requests</a>
+                <a style="background-color:white; color:#4d9df1;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Manage Company
+                    Accounts</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="dashboard-staff-professional-acc-managemant.html">Manage Professional Accounts</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="dashboard-staff-job-matching-interface.html">Job Matching Interface</a>
+                <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="dashboard-staff-payment-history-interface.html">Payment History</a>
+                <!-- <a style="background-color:#4d9df1; color:white;"
+                    class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="dashboard-staff-account-creation.html">Staff Account Creation</a> -->
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-outline-primary" id="sidebarToggle">☰</button>
+                    &nbsp;&nbsp;&nbsp;
+                    <div class="nav-item active"><a class="nav-link" href="index.html"><img src="assets/img/logo.png"
+                                width="50rem">Mustang Agency</a></div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link">Hi, Username (staff)</a></li>
+                            <!-- <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> -->
+
+                        </ul>
+                        <button class="btn btn-outline-primary" id="sidebarToggle" onclick="signOut()">Sign Out</button>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid">
+                <br>
+
+                <div class="col-sm-6">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                        <div class="card-body">
+                            <div class="form-comments">
+                                <div class="title-box-2">
+                                    <button onclick="comAccM()" ="submit" class="btn btn-outline-primary">Back</button>
+                                    <h5 class="title-left">
+                                        Company Account Management - Delete Requests
+                                    </h5>
+                                    <!-- <form action="#!" style="text-align: right;">
+                                        <button class="btn btn-outline-primary" style="color: red;" type="submit"><h7>Delete Account Requests</h7></button>
+                                      </form> -->
+                                    <br>
+                                </div>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Company Name</th>
+                                            <th scope="col">Industry</th>
+                                            <th scope="col">Contact Email</th>
+                                            <th scope="col">Contact Phone Number</th>
+                                            <th scope="col">City</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Meta</td>
+                                            <td>Tech</td>
+                                            <td>meta@official.com</td>
+                                            <td>2378947620</td>
+                                            <td>Austin</td>
+                                            <td><a href="dashboard-staff-company-acc-management-viewdetails.html">View Details</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Google</td>
+                                            <td>Tech</td>
+                                            <td>google@official.com</td>
+                                            <td>4567839220</td>
+                                            <td>New York</td>
+                                            <td><a href="dashboard-staff-company-acc-management-viewdetails.html">View Details</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>SMU</td>
+                                            <td>University</td>
+                                            <td>smuofficial@smu.edu</td>
+                                            <td>5678556789</td>
+                                            <td>Dallas</td>
+                                            <td><a href="dashboard-staff-company-acc-management-viewdetails.html">View Details</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <script>
+        function signOut() {
+            window.location = "index.html"
+        }
+    </script>
+    <script>
+        function companyReject() {
+            window.location = "dashboard-staff-pending-account-requests-reject.html"
+        }
+        function viewD() {
+            window.location = "dashboard-staff-company-acc-management-viewdetails.html"
+
+        }function comAccM() {
+            window.location = "dashboard-staff-company-acc-managemant.html"
+        }
+
+    </script>
+</body>
+
+</html>

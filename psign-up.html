@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mustang Agency - Sign Up</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html"><img src="assets/img/logo.png" width="50rem">Mustang Agency</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="hero-title mb-4">Sign Up</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="form-comments">
+      <div class="title-box-2">
+        <h3 class="title-left">
+          Professional Sign Up
+        </h3>
+        <form action="sign-up.html" style="text-align: right;">
+          <button class="btn btn-primary">Company Sign Up?</button>
+        </form>
+      </div>
+      <form class="form-mf">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <div class="form-group">
+              <b>First Name*</b>
+              <input type="text" class="form-control input-mf" id="Profirstname" placeholder="Enter your First Name"
+                required>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <div class="form-group">
+              <b>Last Name*</b>
+              <input type="text" class="form-control input-mf" id="Prolastname" placeholder="Enter your Last Name"
+                required>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <div class="form-group">
+              <b>Date of Birth*</b>
+              <input type="date" class="form-control input-mf" id="ProDOB" placeholder="Enter your Date Of Birth"
+                required>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <div class="form-group">
+              <b>Gender*</b>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Female
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="form-group">
+              <b>Email*</b>
+              <input type="email" class="form-control input-mf" id="ProEmail" placeholder="Enter Your Email" required>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="form-group">
+              <b>Phone Number*</b>
+              <input type="text" class="form-control input-mf" onchange="phoneval()" id="phone" placeholder="Phone Number *" required>
+              <p id="warning" style="color: red;"></p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="form-group">
+              <b>Your Address*</b>
+              <input type="text" class="form-control input-mf" id="Proaddress" placeholder="Address *" required>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="form-group">
+              <b>City/ Town*</b>
+              <input type="text" class="form-control input-mf" id="Procity" placeholder="City/Town *" required>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="form-group">
+              <b>State*</b>
+              <input type="text" class="form-control input-mf" id="Prostate" placeholder="State *" required>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="form-group">
+              <b>Zip Code*</b>
+              <input type="text" class="form-control input-mf" id="Prozipcode" placeholder="Zip Code *" required>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="form-group">
+              <b>Country*</b>
+              <input type="text" class="form-control input-mf" id="Procountry" placeholder="Country *" required>
+            </div>
+          </div>
+          <br>
+          <div class="col-md-12 mb-3">
+            <div class="form-group">
+              <b>Preferred Username*</b>
+              <input type="text" class="form-control input-mf" id="ProUsername" placeholder="Preferred Username"
+                required>
+            </div>
+          </div>
+
+
+          <!-- <div class="col-md-6 mb-3"> -->
+          <!-- <div class="form-group"> -->
+          &nbsp;<h4>Qualifications</h4>
+          <!-- </div> -->
+          <!-- <div class="col-md-6 mb-3"> -->
+          <!-- <div class="form-group"> -->
+          &nbsp;<label id="categoryLabel" for="categoryField"><b>Category</b></label>
+          <input type="text" class="form-control input-mf" id="categoryField" placeholder="Name of Category" />
+          &nbsp;<label id="keywordsLabel" for="keywordsField"><b>Keywords/ Key Phrases</b></label>
+          <input type="text" class="form-control input-mf" id="keywordsField"
+            placeholder="List of Keywords/ Key Phrases seperated by commas" />
+          <br> &nbsp;
+          <button id="addButton" onclick="add()" class="btn btn-outline-primary">Add</button>
+          <br> &nbsp;
+
+          <!-- </style> -->
+          <table id="myTable" style="text-align: center; border-width: 1pt; border-color: black;">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Keywords/ Key Phrases</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- EMPTY-->
+            </tbody>
+            <tfoot>
+              <!-- NO NEED-->
+
+            </tfoot>
+          </table>
+          <br>
+          <br>
+          <br>&nbsp;
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Terms And Conditions Agreement</label>
+
+            <br>
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Privacy Policy Agreement</label>
+          </div>
+
+          <br>
+
+          <div class="col-md-12">
+            <p id="infodisplay" style="color: red;"></p>
+            <br>
+            <button type="submit" onclick="validate()" class="button button-a button-big button-rouded">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <script>
+    var count = 1;
+    function add() {
+      var category = document.getElementById("categoryField").value;
+      var keyword = document.getElementById("keywordsField").value;
+
+      if (category.length == 0 || keyword.length == 0) {
+        return;
+      }
+
+      var table = document.getElementById("myTable");
+      var row = table.insertRow(count++);
+      var col1 = row.insertCell(0);
+      var col2 = row.insertCell(1);
+      col1.innerHTML = category;
+      col2.innerHTML = keyword;
+
+      document.getElementById("categoryField").value = "";
+      document.getElementById("keywordsField").value = "";
+    }
+
+    function validate() {
+      if (count < 3) {
+        document.getElementById("infodisplay").innerHTML = 'Add Minimum 2 Qualifications';
+      } else {
+        window.location = "index.html";
+      }
+    }
+
+    function phoneval(){
+        var inputNumbersValue = document.getElementById("phone").value.replace(/\D/g, ''); // Remove all non-digits
+        if (inputNumbersValue.length == 10) { // Ensure it does not exceed 10 digits
+          var formattedInputValue = '';
+          var x = inputNumbersValue.match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+          // Only format if there are at least some digits
+          if (x) {
+            // Construct the formatted string as per the matched groups
+            formattedInputValue = x[1] ? '(' + x[1] : '';
+            formattedInputValue += x[2] ? ')' + x[2] : '';
+            formattedInputValue += x[3] ? '-' + x[3] : '';
+          }
+          document.getElementById("phone").value = formattedInputValue;
+          document.getElementById("warning").innerHTML = "";
+        } else {
+          document.getElementById("warning").innerHTML = "Should Have 10 Digits";
+        }
+      }
+  </script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
